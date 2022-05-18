@@ -1,0 +1,237 @@
+/*reset styles.scss*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+html,
+body,
+header,
+main,
+footer,
+section,
+div,
+nav,
+ul,
+ol,
+li,
+a,
+p,
+span,
+b,
+i,
+em,
+input,
+label,
+button,
+textarea,
+blockquote,
+br,
+canvas,
+code,
+dt,
+dd,
+del,
+ins,
+form,
+iframe,
+img,
+pre,
+sub,
+sup,
+table,
+td,
+th,
+tfoot,
+tr,
+video,
+audio,
+aside,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  outline: none;
+}
+
+@font-face {
+  font-family: 'Kudryashev Display';
+  src: url("../fonts/KudryashevDisplay/KudryashevDisplay.eot");
+  src: local("Kudryashev Display"), local("KudryashevDisplay"), url("../fonts/KudryashevDisplay/KudryashevDisplay.eot?#iefix") format("embedded-opentype"), url("../fonts/KudryashevDisplay/KudryashevDisplay.woff2") format("woff2"), url("../fonts/KudryashevDisplay/KudryashevDisplay.woff") format("woff"), url("../fonts/KudryashevDisplay/KudryashevDisplay.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kudryashev Headline';
+  src: url("../fonts/KudryashevDisplay/KudryashevHeadline.eot");
+  src: local("Kudryashev Headline"), local("KudryashevHeadline"), url("../fonts/KudryashevDisplay/KudryashevHeadline.eot?#iefix") format("embedded-opentype"), url("../fonts/KudryashevDisplay/KudryashevHeadline.woff2") format("woff2"), url("../fonts/KudryashevDisplay/KudryashevHeadline.woff") format("woff"), url("../fonts/KudryashevDisplay/KudryashevHeadline.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,
+body a,
+body button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+}
+
+.container {
+  max-width: 1630px;
+  padding: 0px 15px 0px 15px;
+  margin: 0 auto;
+}
+
+.colorized {
+  color: #b68c6e;
+}
+
+.offer__title {
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 126.2%;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  font-family: "Kudryashev Headline";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Kudryashev Display";
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 112.2%;
+}
+
+@media (max-width: 1100px) {
+  h2 {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 650px) {
+  h2 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+
+.services {
+  background: url("../img/stable/line-section-vertical.svg");
+  background-repeat: no-repeat;
+  background-position: top 0px right 30px;
+  background-size: auto 100%;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.services .services__wrapper .services__title {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 0px 45px 0px;
+}
+
+.services .services__wrapper .services__list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.services .services__wrapper .services__list .services__item {
+  padding: 50px 40px 50px 45px;
+  color: #22211e;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border: 1px solid transparent;
+}
+
+.services .services__wrapper .services__list .services__item:hover {
+  background: #f0e3da;
+  border: 1px solid rgba(182, 140, 110, 0.19);
+}
+
+.services .services__wrapper .services__list .services__item .services__title {
+  margin: 21px 0px 21px 0px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 138.2%;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .services .services__wrapper .services__list {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .services {
+    background: none;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .services .services__wrapper .services__title {
+    margin: 0px 0px 30px 0px;
+  }
+  .services .services__wrapper .services__list {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .services .services__wrapper .services__list .services__item {
+    padding: 32px 20px 32px 20px;
+  }
+}
+/*# sourceMappingURL=home.css.map */

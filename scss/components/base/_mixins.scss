@@ -1,0 +1,13 @@
+// font-familys
+@mixin fontMain {
+  font-family: "Montserrat", sans-serif;
+}
+@mixin fontQuote {
+  font-family: 'Lora', serif;;
+}
+@mixin fontTitle1 {
+  font-family: "Kudryashev Display";
+}
+@mixin fontTitle2 {
+  font-family: "Kudryashev Headline";
+}

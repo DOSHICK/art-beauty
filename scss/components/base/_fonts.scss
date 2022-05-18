@@ -1,0 +1,36 @@
+// fontMain = Montserrat
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// font-family: 'Montserrat', sans-serif;
+
+// fontItalic = Lora
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+// font-family: 'Lora', serif;
+
+// fontTitle1 = Kudryashev Display
+@font-face {
+  font-family: 'Kudryashev Display';
+  src: url('../fonts/KudryashevDisplay/KudryashevDisplay.eot');
+  src: local('Kudryashev Display'), local('KudryashevDisplay'),
+      url('../fonts/KudryashevDisplay/KudryashevDisplay.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/KudryashevDisplay/KudryashevDisplay.woff2') format('woff2'),
+      url('../fonts/KudryashevDisplay/KudryashevDisplay.woff') format('woff'),
+      url('../fonts/KudryashevDisplay/KudryashevDisplay.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+// font-family: 'Kudryashev Display';
+
+
+// fontTitle2 = Kudryashev Headline
+@font-face {
+  font-family: 'Kudryashev Headline';
+  src: url('../fonts/KudryashevDisplay/KudryashevHeadline.eot');
+  src: local('Kudryashev Headline'), local('KudryashevHeadline'),
+      url('../fonts/KudryashevDisplay/KudryashevHeadline.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/KudryashevDisplay/KudryashevHeadline.woff2') format('woff2'),
+      url('../fonts/KudryashevDisplay/KudryashevHeadline.woff') format('woff'),
+      url('../fonts/KudryashevDisplay/KudryashevHeadline.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+// font-family: 'Kudryashev Headline';
