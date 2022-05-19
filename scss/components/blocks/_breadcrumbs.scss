@@ -1,0 +1,16 @@
+.breadcrumbs {
+  padding-top: 28px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .breadcrumbs__link {
+    color: #1D1D1A;
+    &::after {
+      content: " :: ";
+    }
+    &:last-child::after{
+      content: unset;
+    }
+  }
+}
