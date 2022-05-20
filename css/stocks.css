@@ -428,6 +428,9 @@ h4 {
     border: none;
     background: none;
     outline: none;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
   }
   .header .header__block_2 .header-burger span {
     width: 30px;
