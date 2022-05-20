@@ -1,0 +1,219 @@
+// base
+@import "../components/base/reset";
+@import "../components/base/fonts";
+@import "../components/base/variables";
+@import "../components/base/mixins";
+@import "../components/base/stable";
+// layout
+@import "../components/layout/header";
+@import "../components/layout/footer";
+
+// blocks
+@import "../components/blocks/breadcrumbs";
+@import "../components/blocks/proposal";
+
+.stocks {
+  position: relative;
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 100vh;
+    right: 580px;
+    transform: translateY(-100%);
+    content: "";
+    width: 607px;
+    height: 607px;
+    background: url("../img/pages/doctors/doctors__dots.png");
+    @media (max-width: 1650px) {
+      right: 400px;
+    }
+    @media (max-width: 1450px) {
+      right: 250px;
+    }
+    @media (max-width: 1250px) {
+      right: 150px;
+    }
+    @media (max-width: 1050px) {
+      content: unset;
+    }
+
+    @media (max-height: 740px) {
+      top: 740px;
+    }
+  }
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        182.31deg,
+        #ae9181 3.47%,
+        #b79b8d 20.53%,
+        #bca092 34.59%,
+        #cbb1a4 49.72%,
+        #ceb6aa 61.98%,
+        #d1baac 74.8%,
+        #d3bcaf 99.62%
+      ),
+      #f0e3da;
+    @media (max-height: 740px) {
+      height: 740px;
+    }
+  }
+  .stocks__header {
+    .offer__title {
+      text-transform: uppercase;
+      word-wrap: break-word;
+      position: relative;
+      &::after {
+        z-index: -1;
+        position: absolute;
+        left: -120px;
+        top: 330px;
+        transform: translateY(-100%);
+        content: "";
+        width: 239px;
+        height: 239px;
+        background: url("../img/pages/doctors/doctors__circle.svg");
+        @media (max-width: 1050px) {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+.stocks__list {
+  padding-top: 40px;
+  padding-bottom: 130px;
+  .stocks__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 50px 0px;
+    &:last-child {
+      margin: 0;
+    }
+    .stocks__img {
+      width: calc(100% - 70px);
+    }
+    .stocks__text {
+      @include fontQuote;
+      color: #ffffff;
+      padding: 18px 150px 35px 38px;
+      width: calc(100% - 120px);
+      display: block;
+      align-self: flex-end;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 29px;
+      line-height: 140%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        display: block;
+        left: 0px;
+        width: 100%;
+        height: 385px;
+        background: #b68c6e;
+      }
+      &::before {
+        content: "";
+        display: block;
+        background: url("../img/pages/stocks/arrow-stiks__text-before.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-width: 30px;
+        height: 14px;
+        margin: 12px 25px 0px 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .stocks__list {
+    .stocks__item {
+      &:last-child {
+      }
+      .stocks__img {
+        width: 100%;
+      }
+      .stocks__text {
+        padding: 18px 100px 35px 38px;
+        width: 100%;
+        &::after {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .stocks__list {
+    .stocks__item {
+      &:last-child {
+      }
+      .stocks__img {
+        width: 100%;
+      }
+      .stocks__text {
+        padding: 18px 50px 35px 38px;
+        &::after {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .stocks__list {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    .stocks__item {
+      background: #b68c6e;
+      &:last-child {
+      }
+      .stocks__img {
+        width: 100%;
+      }
+      .stocks__text {
+        &::before {
+          display: none;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .stocks__list {
+    .stocks__item {
+      background: #b68c6e;
+      &:last-child {
+      }
+      .stocks__img {
+        width: 100%;
+      }
+      .stocks__text {
+        padding: 18px 20px 18px 20px;
+        font-size: 22px;
+        &::before {
+          display: none;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,361 @@
-.header{
-  height: 191px;
+.header {
+  .header__block_1 {
+    .info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .info__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .info__logo-link {
+          margin: 0px 33px 0px 0px;
+        }
+        .info__logo-description {
+          width: 173px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 158.9%;
+          color: #ffffff;
+        }
+      }
+
+      .info__adress {
+        width: 235px;
+        position: relative;
+        .adress__current {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 22px;
+          color: #ffffff;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          right: 20px;
+          bottom: 6px;
+          width: 12px;
+          height: 8px;
+          background: url("../img/stable/arrow-open.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .info__btn {
+        padding: 15px 34px 15px 34px;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 132.9%;
+        color: #b68c6e;
+      }
+
+      .socials {
+        display: flex;
+        flex-direction: row;
+
+        .socials__item {
+          margin: 0px 26px 0px 0px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: 51px;
+          height: 51px;
+          background: rgba(255, 255, 255, 0.15);
+          img {
+            max-width: 22px;
+            max-height: 22px;
+          }
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+
+      .call {
+        display: flex;
+        flex-direction: column;
+        .call__tel {
+          margin: 0px 0px 13px 0px;
+          @include fontTitle3;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 26px;
+          letter-spacing: 0.05em;
+          color: #ffffff;
+          position: relative;
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: -8px;
+            top: 50%;
+            width: 12px;
+            height: 8px;
+            background: url("../img/stable/arrow-open.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+        .call__btn {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 15px;
+          color: #ffffff;
+          text-transform: uppercase;
+          text-decoration: underline;
+          border: none;
+          background: none;
+        }
+      }
+    }
+
+    .nav {
+      background: #ffffff;
+      padding: 30px 0px 30px 0px;
+      .nav__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .nav__item {
+          .nav__link {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 135.4%;
+            text-transform: uppercase;
+            color: #1d1d1a;
+          }
+        }
+      }
+    }
+  }
+  .header__block_2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1450px) {
+  .header {
+    .info {
+      .info__logo {
+        .info__logo-link {
+          margin: 0px 0px 0px 0px;
+        }
+        .info__logo-description {
+          display: none;
+        }
+      }
+
+      .info__adress {
+        .adress__current {
+        }
+        &::after {
+        }
+      }
+
+      .info__btn {
+      }
+
+      .socials {
+        .socials__item {
+          img {
+          }
+
+          &:last-child {
+          }
+        }
+      }
+
+      .call {
+        .call__tel {
+          &::after {
+          }
+        }
+        .call__btn {
+        }
+      }
+    }
+
+    .nav {
+      .nav__list {
+        .nav__item {
+          .nav__link {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .header {
+    .header__block_1 {
+      display: none;
+      .info {
+        .info__logo {
+          .info__logo-link {
+            margin: 0px 0px 0px 0px;
+          }
+          .info__logo-description {
+            display: none;
+          }
+        }
+
+        .info__adress {
+          .adress__current {
+          }
+          &::after {
+          }
+        }
+
+        .info__btn {
+        }
+
+        .socials {
+          .socials__item {
+            img {
+            }
+
+            &:last-child {
+            }
+          }
+        }
+
+        .call {
+          .call__tel {
+            &::after {
+            }
+          }
+          .call__btn {
+          }
+        }
+      }
+
+      .nav {
+        .nav__list {
+          .nav__item {
+            .nav__link {
+            }
+          }
+        }
+      }
+    }
+    .header__block_2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .header-burger {
+        border: none;
+        background: none;
+        outline: none;
+
+        span {
+          width: 30px;
+          height: 14px;
+          display: block;
+          position: relative;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #ffffff;
+          }
+          &::before {
+            top: 0;
+          }
+          &::after {
+            bottom: 0;
+            width: 50%;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    .header__block_1 {
+      .info {
+        .info__logo {
+          .info__logo-link {
+          }
+          .info__logo-description {
+          }
+        }
+
+        .info__adress {
+          .adress__current {
+          }
+          &::after {
+          }
+        }
+
+        .info__btn {
+        }
+
+        .socials {
+          .socials__item {
+            img {
+            }
+
+            &:last-child {
+            }
+          }
+        }
+
+        .call {
+          .call__tel {
+            &::after {
+            }
+          }
+          .call__btn {
+          }
+        }
+      }
+
+      .nav {
+        .nav__list {
+          .nav__item {
+            .nav__link {
+            }
+          }
+        }
+      }
+    }
+    .header__block_2 {
+      padding-top: 11px;
+      padding-bottom: 45px;
+      .logo-link {
+        width: 147px;
+        height: 60px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .header-burger {
+        span {
+          &::before,
+          &::after {
+          }
+          &::before {
+          }
+          &::after {
+          }
+        }
+      }
+    }
+  }
 }

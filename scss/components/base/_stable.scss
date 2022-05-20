@@ -29,13 +29,13 @@ body {
   @media (max-width: 600px) {
     font-size: 55px;
   }
-  @media (max-width:500px){
+  @media (max-width: 500px) {
     font-size: 45px;
   }
-  @media (max-width:450px){
+  @media (max-width: 450px) {
     font-size: 35px;
   }
-  @media (max-width:350px){
+  @media (max-width: 350px) {
     font-size: 32px;
   }
 }
@@ -63,4 +63,11 @@ h2 {
   @media (max-width: 500px) {
     font-size: 35px;
   }
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 126.2%;
+  letter-spacing: -0.03em;
 }
