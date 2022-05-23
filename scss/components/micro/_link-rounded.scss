@@ -1,0 +1,36 @@
+.link-rounded {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding: 0px 0px 0px 74px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1d1d1a;
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../img/stable/link-oval.svg");
+    background-size: cover;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 170px;
+    height: 157px;
+  }
+  .link-rounded-arrow {
+    margin: 0px 16px 0px 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  .link-rounded {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+  }
+}

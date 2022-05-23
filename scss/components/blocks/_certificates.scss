@@ -1,0 +1,192 @@
+.certificates {
+  background: #f0e3da;
+  .certificates__wrapper {
+    padding-top: 115px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .certificates__block {
+    }
+    .certificates__block_1 {
+      padding: 7px 0px 0px 0px;
+      max-width: 540px;
+      .certificates__title {
+      }
+      .certificates__text {
+        margin: 63px 0px 90px 0px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 200%;
+        color: #1d1d1a;
+      }
+    }
+    .certificates__block_2 {
+      position: relative;
+      padding: 0px 0px 80px 70px;
+      max-width: 930px;
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: #eacfbc;
+        width: 845.73px;
+        height: 527.71px;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        left: -60px;
+        bottom: 100px;
+        background: url("../img/blocks/certificates/licenses.svg");
+        width: 277.53px;
+        height: 74.96px;
+      }
+      .certificates__list {
+        .certificates__item {
+          cursor: grab;
+          img {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .certificates {
+    .certificates__wrapper {
+      .certificates__block {
+      }
+      .certificates__block_1 {
+        .certificates__title {
+        }
+        .certificates__text {
+        }
+      }
+      .certificates__block_2 {
+        max-width: 830px;
+        &::before {
+        }
+        &::after {
+        }
+        .certificates__list {
+          .certificates__item {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .certificates {
+    .certificates__wrapper {
+      .certificates__block {
+      }
+      .certificates__block_1 {
+        .certificates__title {
+        }
+        .certificates__text {
+        }
+      }
+      .certificates__block_2 {
+        max-width: 700px;
+        padding: 0px 0px 80px 50px;
+        &::before {
+          width: 100%;
+          height: calc(100% - 100px);
+        }
+        &::after {
+        }
+        .certificates__list {
+          .certificates__item {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .certificates {
+    .certificates__wrapper {
+      .certificates__block {
+      }
+      .certificates__block_1 {
+        .certificates__title {
+        }
+        .certificates__text {
+        }
+      }
+      .certificates__block_2 {
+        max-width: 600px;
+        padding: 0px 0px 0px 30px;
+        &::before {
+        }
+        &::after {
+          content: unset;
+        }
+        .certificates__list {
+          .certificates__item {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .certificates {
+    .certificates__wrapper {
+      padding-top: 35px;
+      padding-bottom: 15px;
+
+      flex-direction: column;
+
+      .certificates__block {
+      }
+      .certificates__block_1 {
+        max-width: unset;
+        padding-bottom: 80px;
+        .certificates__title {
+        }
+        .certificates__text {
+          margin: 15px 0px 70px 0px;
+        }
+      }
+      .certificates__block_2 {
+        max-width: unset;
+        &::before {
+          height: calc(100% - 60px);
+          bottom: 0;
+          width: 100vw;
+          top: 60px;
+          left: -15px;
+        }
+        &::after {
+          content: unset;
+        }
+        .certificates__list {
+          margin: 0px 0px 0px -10px;
+          .certificates__item {
+            margin: 0px 10px 0px 0px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

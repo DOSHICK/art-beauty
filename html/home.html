@@ -3,7 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- подключение стилей swiper slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <!-- подключение стилей страницы -->
   <link rel="stylesheet" href="../css/home.css">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>home</title>
@@ -12,6 +16,88 @@
 <body>
   <div class="wrapper">
     <main>
+
+      <section class="offer">
+        <header class="header">
+          <div class="header__block_1">
+            <div class="info container">
+              <div class="info__logo">
+                <a href="#" class="info__logo-link">
+                  <img src="../img/stable/logo.png" alt="">
+                </a>
+                <p class="info__logo-description">
+                  Клиника косметологии и нитевого лифтинга
+                </p>
+              </div>
+
+              <div class="info__adress">
+                <p class="adress__current">
+                  Санкт-Петербург,
+                  пр. Просвещения, д.33, корп.2
+                </p>
+              </div>
+
+              <button class="info__btn">Отделение стоматологии</button>
+
+              <div class="socials">
+                <div class="socials__item">
+                  <img src="../img/stable/socials/vk.svg" alt="">
+                </div>
+                <div class="socials__item">
+                  <img src="../img/stable/socials/instagram.svg" alt="">
+                </div>
+                <div class="socials__item">
+                  <img src="../img/stable/socials/wapp.svg" alt="">
+                </div>
+              </div>
+
+              <div class="call">
+                <a href="tel:+79219676188" class="call__tel">+7 (921) 967-61-88</a>
+                <button class="call__btn">заказать обратный звонок</button>
+              </div>
+            </div>
+
+            <nav class="nav">
+              <ul class="nav__list container">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Нитевой лифтинг</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Инъекционная косметология</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Аппаратная косметология</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Эстетическая косметология</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Лазерная косметология</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Акции</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Цены</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__block_2 container">
+            <a href="#" class="logo-link">
+              <img src="../img/stable/logo.png" alt="">
+            </a>
+            <button class="header-burger">
+              <span></span>
+            </button>
+          </div>
+
+        </header>
+        
+      </section>
+
+      <!-- services -->
       <section class="services">
         <div class="services__wrapper container">
           <h2 class="services__title">
@@ -67,53 +153,200 @@
         </div>
       </section>
 
-      <!-- <section class="advantage">
-        <div class="advantage__wrapper container">
-          <h2 class="advantage__section-title">
-            <span class="colorized">Преимущества</span><br>
-            нитевого лифтинга APTOS
-          </h2>
-          <div class="advantage__list">
-            <div class="advantage__item">
-              <img src="../img/blocks/advantage/img_1.svg" alt="" class="advantage__img">
-              <p class="advantage__title">
-                Надежно
-              </p>
-              <p class="advantage__text">
-                Методике более 10 лет, эффективность доказана опытом огромного количества пациентов
-              </p>
+      <!-- specialists -->
+      <!-- <section class="specialists"> -->
+      <!-- <div class="specialists__wrapper container"> -->
+      <!-- заголокок -->
+      <!-- <h2 class="specialists__title"><span class="colorized">Наши клиенты</span> <br>всегда в восторге</h2> -->
+      <!-- слайды -->
+      <!-- <div class="slider__wrapper">
+            <div class="specialists__list">
+              <a href="#" class="specialists__card">
+              </a>
             </div>
-            <div class="advantage__item">
-              <img src="../img/blocks/advantage/img_2.svg" alt="" class="advantage__img">
-              <p class="advantage__title">
-                Доступно
-              </p>
-              <p class="advantage__text">
-                Стоимость процедуры в разы ниже пластической операции, а эффект ничем не хуже
-              </p>
-            </div>
-            <div class="advantage__item">
-              <img src="../img/blocks/advantage/img_3.svg" alt="" class="advantage__img">
-              <p class="advantage__title">
-                Быстро
-              </p>
-              <p class="advantage__text">
-                Не требует специальной подготовки, установку нитей можно произвести в день обращения
-              </p>
-            </div>
-            <div class="advantage__item">
-              <img src="../img/blocks/advantage/img_4.svg" alt="" class="advantage__img">
-              <p class="advantage__title">
-                Комфортно
-              </p>
-              <p class="advantage__text">
-                Практически отсутствует реабилитационный период, нет болевых ощущений во время самой процедуры
-              </p>
+          </div>
+        </div> -->
+
+      <!-- навигация  -->
+      <!-- <div class="clients__navigation">
+          <div class="clients-button-prev"><img src="../img/stable/slider-vector.svg" alt="prev"></div>
+          <div class="clients-button-next"><img src="../img/stable/slider-vector.svg" alt="prev"></div>
+        </div>
+      </section> -->
+
+      <!-- certificates -->
+      <section class="certificates">
+        <div class="certificates__wrapper container">
+          <div class="certificates__block certificates__block_1">
+            <h2 class="certificates__title">Сертификаты клиники</h2>
+            <p class="certificates__text">
+              Каждый из наших врачей обязательно проходит дополнительное образование в смежной области и знакомится с
+              наиболее современными методами и материалами в косметологии. Клиника имеет множество сертификатов качества
+              и безопасности по каждому направлению нашей деятельности.
+            </p>
+            <a href="#" class="certificates__link link-rounded">
+              <img class=" link-rounded-arrow" src="../img/stable/link-arrow.svg" alt="">
+              Подробнее
+            </a>
+          </div>
+          <!-- слайды -->
+          <div class="certificates__block certificates__block_2">
+            <div class="certificates__list">
+              <div class="certificates__item">
+                <img src="../img/blocks/certificates/certificate_1.png" alt="">
+              </div>
+              <div class="certificates__item">
+                <img src="../img/blocks/certificates/certificate_2.png" alt="">
+              </div>
+              <div class="certificates__item">
+                <img src="../img/blocks/certificates/certificate_1.png" alt="">
+              </div>
+              <div class="certificates__item">
+                <img src="../img/blocks/certificates/certificate_2.png" alt="">
+              </div>
+              <div class="certificates__item">
+                <img src="../img/blocks/certificates/certificate_1.png" alt="">
+              </div>
+              <div class="certificates__item">
+                <img src="../img/blocks/certificates/certificate_2.png" alt="">
+              </div>
+              <div class="certificates__item">
+                <img src="../img/blocks/certificates/certificate_1.png" alt="">
+              </div>
+              <div class="certificates__item">
+                <img src="../img/blocks/certificates/certificate_2.png" alt="">
+              </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
+
+      <!-- clients -->
+      <section class="clients ">
+        <div class="clients__wrapper container">
+          <!-- заголокок -->
+          <h2 class="clients__title"><span class="colorized">Наши клиенты</span> <br>всегда в восторге</h2>
+          <!-- слайды -->
+          <div class="slider__wrapper">
+            <div class="clients__list">
+              <div class="clients__card">
+                <div class="clients__block">
+                  <img class="clients__img" src="../img/blocks/clients/client_1.png" alt="">
+                  <div class="clients__name">Марина</div>
+                  <div class="clients__description">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                  </div>
+                </div>
+                <div class="clients__socials">
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/vk.svg" alt=""></a>
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/instagram.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="clients__card">
+                <div class="clients__block">
+                  <img class="clients__img" src="../img/blocks/clients/client_2.png" alt="">
+                  <div class="clients__name">Марина</div>
+                  <div class="clients__description">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                  </div>
+                </div>
+                <div class="clients__socials">
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/vk.svg" alt=""></a>
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/instagram.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="clients__card">
+                <div class="clients__block">
+                  <img class="clients__img" src="../img/blocks/clients/client_3.png" alt="">
+                  <div class="clients__name">Марина</div>
+                  <div class="clients__description">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                  </div>
+                </div>
+                <div class="clients__socials">
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/vk.svg" alt=""></a>
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/instagram.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="clients__card">
+                <div class="clients__block">
+                  <img class="clients__img" src="../img/blocks/clients/client_4.png" alt="">
+                  <div class="clients__name">Марина</div>
+                  <div class="clients__description">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                  </div>
+                </div>
+                <div class="clients__socials">
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/vk.svg" alt=""></a>
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/instagram.svg" alt=""></a>
+                </div>
+              </div>
+
+              <div class="clients__card">
+                <div class="clients__block">
+                  <img class="clients__img" src="../img/blocks/clients/client_1.png" alt="">
+                  <div class="clients__name">Марина</div>
+                  <div class="clients__description">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                  </div>
+                </div>
+                <div class="clients__socials">
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/vk.svg" alt=""></a>
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/instagram.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="clients__card">
+                <div class="clients__block">
+                  <img class="clients__img" src="../img/blocks/clients/client_2.png" alt="">
+                  <div class="clients__name">Марина</div>
+                  <div class="clients__description">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                  </div>
+                </div>
+                <div class="clients__socials">
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/vk.svg" alt=""></a>
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/instagram.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="clients__card">
+                <div class="clients__block">
+                  <img class="clients__img" src="../img/blocks/clients/client_3.png" alt="">
+                  <div class="clients__name">Марина</div>
+                  <div class="clients__description">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                  </div>
+                </div>
+                <div class="clients__socials">
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/vk.svg" alt=""></a>
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/instagram.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="clients__card">
+                <div class="clients__block">
+                  <img class="clients__img" src="../img/blocks/clients/client_4.png" alt="">
+                  <div class="clients__name">Марина</div>
+                  <div class="clients__description">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                  </div>
+                </div>
+                <div class="clients__socials">
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/vk.svg" alt=""></a>
+                  <a href="#" class="clients__socials-link"><img src="../img/blocks/clients/instagram.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- навигация  -->
+          <div class="clients__navigation">
+            <div class="clients-button-prev"><img src="../img/stable/slider-vector.svg" alt="prev"></div>
+            <div class="clients-button-next"><img src="../img/stable/slider-vector.svg" alt="prev"></div>
+          </div>
+        </div>
+      </section>
+
     </main>
+    <!-- footer -->
     <footer class="footer">
       <div class="footer__wrapper container">
         <div class="footer__block footer__block_1">
@@ -235,6 +468,15 @@
       </div>
     </footer>
   </div>
+
+  <!-- подключение swiper slider -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!-- подключение скриптов блоков -->
+  <script src="../js/blocks/certificates.js"></script>
+  <script src="../js/blocks/clients.js"></script>
 </body>
 
 </html>

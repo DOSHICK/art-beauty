@@ -227,6 +227,53 @@ h5 {
   }
 }
 
+.link-rounded {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0px 0px 0px 74px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1d1d1a;
+}
+
+.link-rounded::after {
+  content: "";
+  position: absolute;
+  background: url("../img/stable/link-oval.svg");
+  background-size: cover;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 170px;
+  height: 157px;
+}
+
+.link-rounded .link-rounded-arrow {
+  margin: 0px 16px 0px 0px;
+}
+
+@media (max-width: 550px) {
+  .link-rounded {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+  }
+}
+
 .header .header__block_1 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1235,44 +1282,6 @@ h5 {
   padding: 0px 0px 40px 0px;
 }
 
-.doctors__list .doctors__item .doctors__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  padding: 0px 0px 0px 74px;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #1d1d1a;
-}
-
-.doctors__list .doctors__item .doctors__link::after {
-  content: "";
-  position: absolute;
-  background: url("../img/stable/link-oval.svg");
-  background-size: cover;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 170px;
-  height: 157px;
-}
-
-.doctors__list .doctors__item .doctors__link .doctors__link-arrow {
-  margin: 0px 16px 0px 0px;
-}
-
 @media (max-width: 1450px) {
   .doctors__list {
     -ms-grid-columns: auto auto;
@@ -1323,9 +1332,6 @@ h5 {
   }
   .doctors__list .doctors__item .doctors__block .doctors__item-title {
     font-size: 28px;
-  }
-  .doctors__list .doctors__item .doctors__link {
-    font-size: 22px;
   }
 }
 /*# sourceMappingURL=doctors.css.map */

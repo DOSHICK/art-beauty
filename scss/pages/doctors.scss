@@ -4,6 +4,10 @@
 @import "../components/base/variables";
 @import "../components/base/mixins";
 @import "../components/base/stable";
+
+// micro
+@import "../components/micro/link-rounded";
+
 // layout
 @import "../components/layout/header";
 @import "../components/layout/footer";
@@ -69,7 +73,7 @@
         width: 239px;
         height: 239px;
         background: url("../img/pages/doctors/doctors__circle.svg");
-        @media (max-width:1050px){
+        @media (max-width: 1050px) {
           content: none;
         }
       }
@@ -123,33 +127,6 @@
         padding: 0px 0px 40px 0px;
       }
     }
-    .doctors__link {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      position: relative;
-      padding: 0px 0px 0px 74px;
-      font-weight: 600;
-      font-size: 25px;
-      line-height: 30px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #1d1d1a;
-      &::after {
-        content: "";
-        position: absolute;
-        background: url("../img/stable/link-oval.svg");
-        background-size: cover;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 170px;
-        height: 157px;
-      }
-      .doctors__link-arrow {
-        margin: 0px 16px 0px 0px;
-      }
-    }
   }
 }
 
@@ -169,12 +146,6 @@
         .doctors__item-title {
         }
         .doctors__item-text {
-        }
-      }
-      .doctors__link {
-        &::after {
-        }
-        .doctors__link-arrow {
         }
       }
     }
@@ -198,12 +169,6 @@
         .doctors__item-title {
         }
         .doctors__item-text {
-        }
-      }
-      .doctors__link {
-        &::after {
-        }
-        .doctors__link-arrow {
         }
       }
     }
@@ -232,13 +197,6 @@
           font-size: 28px;
         }
         .doctors__item-text {
-        }
-      }
-      .doctors__link {
-        font-size: 22px;
-        &::after {
-        }
-        .doctors__link-arrow {
         }
       }
     }

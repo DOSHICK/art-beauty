@@ -4,9 +4,29 @@
 @import "../components/base/variables";
 @import "../components/base/mixins";
 @import "../components/base/stable";
+
 // layout
+@import "../components/layout/header";
 @import "../components/layout/footer";
+
+// micro
+@import "../components/micro/link-rounded";
 
 // blocks
 @import "../components/blocks/services";
-@import "../components/blocks/advantage";
+@import "../components/blocks/certificates";
+@import "../components/blocks/clients";
+
+.offer {
+  background: linear-gradient(
+      182.31deg,
+      #ae9181 3.47%,
+      #b79b8d 20.53%,
+      #bca092 34.59%,
+      #cbb1a4 49.72%,
+      #ceb6aa 61.98%,
+      #d1baac 74.8%,
+      #d3bcaf 99.62%
+    ),
+    #f0e3da;
+}
