@@ -157,7 +157,7 @@ body button {
 
 @media (max-width: 350px) {
   .offer__title {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
@@ -271,6 +271,17 @@ h5 {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.05em;
+    padding: 0px 0px 0px 30px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .link-rounded::after {
+    width: 78.41px;
+    height: 69.87px;
+  }
+  .link-rounded .link-rounded-arrow {
+    margin: 0px 14px 0px 0px;
   }
 }
 
