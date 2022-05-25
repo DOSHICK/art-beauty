@@ -34,6 +34,21 @@
           font-size: 35px;
           line-height: 154%;
           color: #b68c6e;
+          position: relative; 
+          z-index: 1;
+          &::before{
+            z-index: -1;
+            content: '';
+            position: absolute; 
+            display: block;
+            width: 153px;
+            height: 98px;
+            background: url('../img/blocks/clinic/quotes.svg');
+            background-size: 100% 100%;
+            top: -24px;
+            left: -76px;
+
+          }
         }
       }
 
