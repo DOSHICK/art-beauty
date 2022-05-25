@@ -875,7 +875,7 @@ h5 {
 }
 
 .breadcrumbs .breadcrumbs__link::after {
-  content: " :: ";
+  content: "\a0::\a0";
 }
 
 .breadcrumbs .breadcrumbs__link:last-child::after {
