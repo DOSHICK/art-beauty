@@ -1244,6 +1244,9 @@ h5 {
   .clinic .clinic__wrapper .clinic__block_1 .clinic__text-block .clinic__text {
     font-size: 22px;
   }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__text-block .clinic__text::before {
+    content: unset;
+  }
   .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block::before {
     width: 50%;
   }

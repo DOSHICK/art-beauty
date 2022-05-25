@@ -346,6 +346,9 @@
           }
           .clinic__text {
             font-size: 22px;
+            &::before{
+              content: unset;
+            }
           }
         }
 
