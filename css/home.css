@@ -996,6 +996,278 @@ h5 {
   }
 }
 
+.clinic {
+  padding-top: 147px;
+  padding-bottom: 134px;
+  background: #f0e3da;
+  overflow: hidden;
+}
+
+.clinic .clinic__wrapper .clinic__block_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 123px;
+}
+
+.clinic .clinic__wrapper .clinic__block_1 .clinic__text-block {
+  max-width: 615px;
+}
+
+.clinic .clinic__wrapper .clinic__block_1 .clinic__text-block .clinic__title {
+  margin: 0px 0px 60px 0px;
+  text-transform: uppercase;
+  color: #312c38;
+}
+
+.clinic .clinic__wrapper .clinic__block_1 .clinic__text-block .clinic__title .smoller {
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 105%;
+  letter-spacing: 4.95979px;
+}
+
+.clinic .clinic__wrapper .clinic__block_1 .clinic__text-block .clinic__text {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 154%;
+  color: #b68c6e;
+}
+
+.clinic .clinic__wrapper .clinic__block_1 .clinic__img-block {
+  z-index: 1;
+  position: relative;
+  padding-top: 100px;
+}
+
+.clinic .clinic__wrapper .clinic__block_1 .clinic__img-block::before {
+  z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  right: -70px;
+  background: #b68c6e;
+  width: 516.96px;
+  height: 475.5px;
+}
+
+.clinic .clinic__wrapper .clinic__block_1 .clinic__img-block::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/blocks/clinic/dots-after.svg");
+  background-size: 100% 100%;
+  top: 205px;
+  left: -85px;
+  width: 161px;
+  height: 144px;
+}
+
+.clinic .clinic__wrapper .clinic__block_1 .clinic__img-block .clinic__img-secondary {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  left: -54px;
+  position: absolute;
+  bottom: -35px;
+}
+
+.clinic .clinic__wrapper .clinic__block_2.clinic__info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  color: #1d1d1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clinic .clinic__wrapper .clinic__block_2.clinic__info .clinic__info-text_1 {
+  width: 568px;
+}
+
+.clinic .clinic__wrapper .clinic__block_2.clinic__info .clinic__info-text_2 {
+  width: 598.95px;
+}
+
+@media (max-width: 1550px) {
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block::before {
+    width: 430px;
+    bottom: 70px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block .clinic__img-main {
+    width: 440px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .clinic .clinic__wrapper .clinic__block_1 {
+    padding-bottom: 60px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block .clinic__img-secondary {
+    width: 250px;
+    left: -15px;
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .clinic .clinic__wrapper .clinic__block_1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__text-block {
+    max-width: unset;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block {
+    padding-top: 16px;
+    padding-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block::before {
+    width: 205px;
+    height: 189px;
+    background: #b68c6e;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+    right: -15px;
+    bottom: -15px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block::after {
+    left: 15px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block .clinic__img-secondary {
+    position: relative;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    bottom: -30px;
+  }
+  .clinic .clinic__wrapper .clinic__block_2.clinic__info .clinic__info-text_1 {
+    width: 50%;
+    margin: 0px 20px 0px 0px;
+  }
+  .clinic .clinic__wrapper .clinic__block_2.clinic__info .clinic__info-text_2 {
+    margin: 0px 0px 0px 20px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 950px) {
+  .clinic {
+    padding-top: 800px;
+    padding-bottom: 80px;
+  }
+  .clinic .clinic__wrapper .clinic__block_2.clinic__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clinic .clinic__wrapper .clinic__block_2.clinic__info .clinic__info-text {
+    width: 100%;
+  }
+  .clinic .clinic__wrapper .clinic__block_2.clinic__info .clinic__info-text_1 {
+    margin: 0px 0px 25px 0px;
+  }
+  .clinic .clinic__wrapper .clinic__block_2.clinic__info .clinic__info-text_2 {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .clinic {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__text-block {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__text-block .clinic__title .smoller {
+    font-size: 35px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__text-block .clinic__text {
+    font-size: 22px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block::before {
+    width: 50%;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block::after {
+    width: 42%;
+    max-width: 161px;
+    height: 120px;
+    top: 15px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block .clinic__img-secondary {
+    width: 37%;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__img-block .clinic__img-main {
+    width: 55%;
+  }
+}
+
+@media (max-width: 500px) {
+  .clinic {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__text-block .clinic__title {
+    margin: 0px 0px 24px 0px;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__text-block .clinic__title .smoller {
+    font-size: 24.21px;
+    line-height: 105%;
+  }
+  .clinic .clinic__wrapper .clinic__block_1 .clinic__text-block .clinic__text {
+    font-size: 16px;
+    line-height: 154%;
+  }
+  .clinic .clinic__wrapper .clinic__block_2.clinic__info {
+    font-size: 13px;
+    line-height: 200%;
+  }
+}
+
 .specialists {
   padding: 113px 0px 270px 0px;
 }
@@ -1088,6 +1360,12 @@ h5 {
   z-index: 1;
 }
 
+.specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:hover .specialists__hover-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(3n + 1) {
   margin: 210px 0px 0px 0px;
   display: -webkit-box;
@@ -1109,6 +1387,17 @@ h5 {
 
 .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(3n + 1) .specialists__img {
   padding: 60px 0px 117px 70px;
+}
+
+.specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(3n + 1) .specialists__hover-block {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+}
+
+.specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(3n + 1) .specialists__hover-block img {
+  width: 94px;
+  height: 107px;
 }
 
 .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(3n + 1) .specialists__name {
@@ -1138,6 +1427,14 @@ h5 {
 
 .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(3n + 2) .specialists__img {
   padding: 60px 60px 0px 0px;
+}
+
+.specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(3n + 2) .specialists__hover-block {
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 30px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(3n + 2) .specialists__name {
@@ -1173,10 +1470,54 @@ h5 {
   padding: 0px 60px 60px 0px;
 }
 
+.specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(3n + 3) .specialists__hover-block {
+  position: absolute;
+  top: 1px;
+  right: 62px;
+}
+
 .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(3n + 3) .specialists__name {
   max-width: 290px;
   bottom: 60px;
   right: 225px;
+}
+
+.specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card .specialists__img {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card .specialists__hover-block {
+  display: none;
+  background: rgba(250, 250, 250, 0.8);
+  width: 348px;
+  height: 412px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card .specialists__hover-block img {
+  margin: 40px 0px 0px 0px;
+}
+
+.specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card .specialists__hover-block .specialists__hover-description {
+  margin: 20px 0px 0px 0px;
+  width: 193px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 147.2%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #22211e;
 }
 
 .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card .specialists__name {
@@ -1242,6 +1583,16 @@ h5 {
   .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(2n + 1) .specialists__img {
     padding: 60px 0px 117px 70px;
   }
+  .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(2n + 1) .specialists__hover-block {
+    left: unset;
+    bottom: unset;
+    right: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    position: absolute;
+    top: 60px;
+    left: 70px;
+  }
   .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(2n + 1) .specialists__name {
     left: 0;
     padding: 0px 0px 0px 70px;
@@ -1269,6 +1620,17 @@ h5 {
   }
   .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(2n) .specialists__img {
     padding: 60px 0px 117px 70px;
+  }
+  .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(2n) .specialists__hover-block {
+    left: unset;
+    bottom: unset;
+    right: unset;
+    top: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    position: absolute;
+    top: 60px;
+    right: 1px;
   }
   .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(2n) .specialists__name {
     left: unset;
@@ -1318,12 +1680,16 @@ h5 {
     height: 393px;
     background: #eacfbc;
   }
+  .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(2n) .specialists__hover-block, .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(2n + 1) .specialists__hover-block {
+    display: none;
+  }
   .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(2n) .specialists__name, .specialists .specialists__wrapper .slider__wrapper .specialists__list .specialists__card:nth-child(2n + 1) .specialists__name {
     width: 350px;
-    left: 50%;
+    left: 0;
     right: unset;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: none;
+            transform: none;
+    padding: 0px 0px 0px 20px;
   }
 }
 

@@ -1,0 +1,419 @@
+.clinic {
+  padding-top: 147px;
+  padding-bottom: 134px;
+  background: #f0e3da;
+  overflow: hidden;
+
+  .clinic__wrapper {
+    .clinic__block {
+    }
+
+    .clinic__block_1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 123px;
+
+      .clinic__text-block {
+        max-width: 615px;
+        .clinic__title {
+          margin: 0px 0px 60px 0px;
+          text-transform: uppercase;
+          color: #312c38;
+          .smoller {
+            font-weight: 400;
+            font-size: 58px;
+            line-height: 105%;
+            letter-spacing: 4.95979px;
+          }
+        }
+        .clinic__text {
+          @include fontQuote;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 35px;
+          line-height: 154%;
+          color: #b68c6e;
+        }
+      }
+
+      .clinic__img-block {
+        z-index: 1;
+        position: relative;
+        padding-top: 100px;
+        &::before {
+          z-index: -1;
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -40px;
+          right: -70px;
+          background: #b68c6e;
+          width: 516.96px;
+          height: 475.5px;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          background: url("../img/blocks/clinic/dots-after.svg");
+          background-size: 100% 100%;
+          top: 205px;
+          left: -85px;
+          width: 161px;
+          height: 144px;
+        }
+
+        .clinic__img-secondary {
+          transform: translateX(-100%);
+          left: -54px;
+          position: absolute;
+          bottom: -35px;
+        }
+        .clinic__img-main {
+        }
+      }
+    }
+
+    .clinic__block_2.clinic__info {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 200%;
+      color: #1d1d1a;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .clinic__info-text {
+      }
+      .clinic__info-text_1 {
+        width: 568px;
+      }
+      .clinic__info-text_2 {
+        width: 598.95px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1550px) {
+  .clinic {
+    .clinic__wrapper {
+      .clinic__block {
+      }
+
+      .clinic__block_1 {
+        .clinic__text-block {
+          .clinic__title {
+            .smoller {
+            }
+          }
+          .clinic__text {
+          }
+        }
+
+        .clinic__img-block {
+          &::before {
+            width: 430px;
+            bottom: 70px;
+          }
+
+          &::after {
+          }
+
+          .clinic__img-secondary {
+          }
+          .clinic__img-main {
+            width: 440px;
+          }
+        }
+      }
+
+      .clinic__block_2.clinic__info {
+        .clinic__info-text {
+        }
+        .clinic__info-text_1 {
+        }
+        .clinic__info-text_2 {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .clinic {
+    .clinic__wrapper {
+      .clinic__block {
+      }
+
+      .clinic__block_1 {
+        padding-bottom: 60px;
+        .clinic__text-block {
+          .clinic__title {
+            .smoller {
+            }
+          }
+          .clinic__text {
+          }
+        }
+
+        .clinic__img-block {
+          &::before {
+          }
+
+          &::after {
+          }
+
+          .clinic__img-secondary {
+            width: 250px;
+            left: -15px;
+            bottom: 30px;
+          }
+          .clinic__img-main {
+          }
+        }
+      }
+
+      .clinic__block_2.clinic__info {
+        .clinic__info-text {
+        }
+        .clinic__info-text_1 {
+        }
+        .clinic__info-text_2 {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .clinic {
+    .clinic__wrapper {
+      .clinic__block {
+      }
+
+      .clinic__block_1 {
+        flex-direction: column;
+
+        .clinic__text-block {
+          max-width: unset;
+          .clinic__title {
+            .smoller {
+            }
+          }
+          .clinic__text {
+          }
+        }
+
+        .clinic__img-block {
+          padding-top: 16px;
+          padding-bottom: 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-end;
+          &::before {
+            width: 205px;
+            height: 189px;
+            background: #b68c6e;
+
+            top: unset;
+            right: unset;
+            bottom: unset;
+            left: unset;
+
+            right: -15px;
+            bottom: -15px;
+          }
+
+          &::after {
+            left: 15px;
+          }
+
+          .clinic__img-secondary {
+            position: relative;
+            top: unset;
+            right: unset;
+            bottom: unset;
+            left: unset;
+            transform: unset;
+            bottom: -30px;
+          }
+          .clinic__img-main {
+          }
+        }
+      }
+
+      .clinic__block_2.clinic__info {
+        .clinic__info-text {
+        }
+        .clinic__info-text_1 {
+          width: 50%;
+          margin: 0px 20px 0px 0px;
+        }
+        .clinic__info-text_2 {
+          margin: 0px 0px 0px 20px;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .clinic {
+    padding-top: 800px;
+    padding-bottom: 80px;
+    .clinic__wrapper {
+      .clinic__block {
+      }
+
+      .clinic__block_1 {
+        .clinic__text-block {
+          .clinic__title {
+            .smoller {
+            }
+          }
+          .clinic__text {
+          }
+        }
+
+        .clinic__img-block {
+          &::before {
+          }
+
+          &::after {
+          }
+
+          .clinic__img-secondary {
+          }
+          .clinic__img-main {
+          }
+        }
+      }
+
+      .clinic__block_2.clinic__info {
+        flex-direction: column;
+        .clinic__info-text {
+          width: 100%;
+        }
+        .clinic__info-text_1 {
+          margin: 0px 0px 25px 0px;
+        }
+        .clinic__info-text_2 {
+          margin: 0px 0px 0px 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .clinic {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .clinic__wrapper {
+      .clinic__block {
+      }
+
+      .clinic__block_1 {
+        padding-right: 0px;
+        padding-left: 0px;
+        .clinic__text-block {
+          padding-right: 15px;
+          padding-left: 15px;
+          .clinic__title {
+            .smoller {
+              font-size: 35px;
+            }
+          }
+          .clinic__text {
+            font-size: 22px;
+          }
+        }
+
+        .clinic__img-block {
+          &::before {
+            width: 50%;
+          }
+
+          &::after {
+            width: 42%;
+            max-width: 161px;
+            height: 120px;
+            top: 15px;
+          }
+
+          .clinic__img-secondary {
+            width: 37%;
+          }
+          .clinic__img-main {
+            width: 55%;
+          }
+        }
+      }
+
+      .clinic__block_2.clinic__info {
+        .clinic__info-text {
+        }
+        .clinic__info-text_1 {
+        }
+        .clinic__info-text_2 {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .clinic {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    .clinic__wrapper {
+      .clinic__block {
+      }
+
+      .clinic__block_1 {
+        .clinic__text-block {
+          .clinic__title {
+            margin: 0px 0px 24px 0px;
+            .smoller {
+              font-size: 24.21px;
+              line-height: 105%;
+            }
+          }
+          .clinic__text {
+            font-size: 16px;
+            line-height: 154%;
+          }
+        }
+
+        .clinic__img-block {
+          &::before {
+          }
+
+          &::after {
+          }
+
+          .clinic__img-secondary {
+          }
+          .clinic__img-main {
+          }
+        }
+      }
+
+      .clinic__block_2.clinic__info {
+        font-size: 13px;
+        line-height: 200%;
+        .clinic__info-text {
+        }
+        .clinic__info-text_1 {
+        }
+        .clinic__info-text_2 {
+        }
+      }
+    }
+  }
+}

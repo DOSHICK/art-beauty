@@ -61,6 +61,12 @@
         .specialists__card {
           position: relative;
           z-index: 1;
+
+          &:hover {
+            .specialists__hover-block {
+              display: flex;
+            }
+          }
           &:nth-child(3n + 1) {
             margin: 210px 0px 0px 0px;
             display: flex;
@@ -75,6 +81,16 @@
             }
             .specialists__img {
               padding: 60px 0px 117px 70px;
+            }
+            .specialists__hover-block {
+              position: absolute;
+              top: 60px;
+              left: 70px;
+
+              img {
+                width: 94px;
+                height: 107px;
+              }
             }
             .specialists__name {
               left: 0;
@@ -96,6 +112,12 @@
             }
             .specialists__img {
               padding: 60px 60px 0px 0px;
+            }
+            .specialists__hover-block {
+              position: absolute;
+              top: 60px;
+              left: calc(50% - 30px);
+              transform: translateX(-50%);
             }
             .specialists__name {
               max-width: 255px;
@@ -121,6 +143,11 @@
             .specialists__img {
               padding: 0px 60px 60px 0px;
             }
+            .specialists__hover-block {
+              position: absolute;
+              top: 1px;
+              right: 62px;
+            }
             .specialists__name {
               max-width: 290px;
               bottom: 60px;
@@ -128,6 +155,32 @@
             }
           }
           .specialists__img {
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+          }
+          .specialists__hover-block {
+            // change to none
+            display: none;
+            background: rgba(250, 250, 250, 0.8);
+            width: 348px;
+            height: 412px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+              margin: 40px 0px 0px 0px;
+            }
+
+            .specialists__hover-description {
+              margin: 20px 0px 0px 0px;
+              width: 193px;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 147.2%;
+              text-align: center;
+              text-transform: uppercase;
+              color: #22211e;
+            }
           }
           .specialists__name {
             @include fontTitle1;
@@ -229,6 +282,15 @@
               .specialists__img {
                 padding: 60px 0px 117px 70px;
               }
+              .specialists__hover-block {
+                left: unset;
+                bottom: unset;
+                right: unset;
+                transform: unset;
+                position: absolute;
+                top: 60px;
+                left: 70px;
+              }
               .specialists__name {
                 left: 0;
                 padding: 0px 0px 0px 70px;
@@ -252,6 +314,16 @@
               }
               .specialists__img {
                 padding: 60px 0px 117px 70px;
+              }
+              .specialists__hover-block {
+                left: unset;
+                bottom: unset;
+                right: unset;
+                top: unset;
+                transform: unset;
+                position: absolute;
+                top: 60px;
+                right: 1px;
               }
               .specialists__name {
                 left: unset;
@@ -365,11 +437,15 @@
               }
               .specialists__img {
               }
+              .specialists__hover-block {
+                display: none;
+              }
               .specialists__name {
                 width: 350px;
-                left: 50%;
+                left: 0;
                 right: unset;
-                transform: translateX(-50%);
+                transform: none;
+                padding: 0px 0px 0px 20px;
               }
             }
           }
@@ -494,7 +570,6 @@
     }
   }
 }
-
 
 @media (max-width: 400px) {
   .specialists {
