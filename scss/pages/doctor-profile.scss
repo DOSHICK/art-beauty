@@ -13,9 +13,10 @@
 @import "../components/micro/link-rounded";
 
 // blocks
+@import "../components/blocks/breadcrumbs";
+@import "../components/blocks/example";
 @import "../components/blocks/specialists";
 @import "../components/blocks/certificates";
-@import "../components/blocks/breadcrumbs";
 
 .offer {
   background: linear-gradient(
