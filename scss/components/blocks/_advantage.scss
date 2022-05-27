@@ -100,3 +100,30 @@
     }
   }
 }
+
+.advantage__block_2 {
+  .advantage__footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .advantage__plus {
+      width: 100%;
+      margin: 0px 0px 100px 0px;
+      display: flex;
+      flex-direction: row;
+      padding: 14px 16px 14px 16px;
+      background: #FFF6F0;
+      .advantage__text {
+        margin: 0px 0px 0px 19px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        color: #1d1d1a;
+      }
+    }
+
+    .advantage__link {
+    }
+  }
+}
