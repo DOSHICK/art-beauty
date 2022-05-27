@@ -1,0 +1,27 @@
+// base
+@import "../components/base/reset";
+@import "../components/base/fonts";
+@import "../components/base/variables";
+@import "../components/base/mixins";
+@import "../components/base/stable";
+
+// layout
+@import "../components/layout/header";
+@import "../components/layout/footer";
+
+// micro
+@import "../components/micro/link-rounded";
+
+// blocks
+@import "../components/blocks/breadcrumbs";
+@import "../components/blocks/advantage";
+@import "../components/blocks/example";
+@import "../components/blocks/specialists";
+@import "../components/blocks/certificates";
+@import "../components/blocks/proposal";
+@import "../components/blocks/direrctions";
+
+
+.directions{
+  background: #F0E3DA;
+}

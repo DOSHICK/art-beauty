@@ -1,0 +1,122 @@
+/*   directions   */
+.directions {
+  .directions__wrapper {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    .directions__title {
+      @include fontTitle1;
+      max-width: 1000px;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 110%;
+      letter-spacing: 4.95979px;
+      text-transform: uppercase;
+      color: #312c38;
+      margin: 0px 0px 50px 0px;
+    }
+    .directions__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-row-gap: 40px;
+      grid-column-gap: 30px;
+      .directions__item {
+        @include fontQuote;
+        max-width: 500px;
+        display: inline-flex;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 154%;
+        color: #b68c6e;
+        &::before {
+          margin: 13px 30px 0px 0px;
+          content: "";
+          position: relative;
+          display: block;
+          background: url("../img/blocks/directions/check-mark.svg");
+          min-width: 30px;
+          min-height: 20px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .directions {
+    .directions__wrapper {
+      .directions__title {
+      }
+      .directions__list {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        .directions__item {
+          &::before {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .directions {
+    .directions__wrapper {
+      .directions__title {
+      }
+      .directions__list {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        .directions__item {
+          max-width: none;
+          &::before {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .directions {
+    .directions__wrapper {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      .directions__title {
+        font-size: 35px;
+        margin: 0px 0px 30px 0px;
+      }
+      .directions__list {
+        grid-row-gap: 20px;
+        .directions__item {
+          &::before {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .directions {
+    .directions__wrapper {
+      .directions__title {
+        font-size: 25px;
+        margin: 0px 0px 20px 0px;
+      }
+      .directions__list {
+        grid-row-gap: 20px;
+        .directions__item {
+          font-size: 20px;
+          &::before {
+            margin-right: 10px;
+            min-width: 15px;
+            margin-top: 9px;
+          }
+        }
+      }
+    }
+  }
+}

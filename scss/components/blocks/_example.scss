@@ -1,6 +1,20 @@
 .example {
+  padding-top: 130px;
+  padding-bottom: 130px;
   .example__text-block {
+    .example__title {
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .example__description {
+      margin: 30px 0px 45px 0px;
+      font-size: 18px;
+      line-height: 180%;
+      text-align: center;
+      color: #1d1d1a;
+    }
   }
+
   .slider__wrapper {
     position: relative;
     .slider__navigation {
@@ -105,6 +119,8 @@
 
 @media (max-width: 800px) {
   .example {
+    padding-top: 50px;
+    padding-bottom: 50px;
     .example__text-block {
     }
     .slider__wrapper {
@@ -117,6 +133,56 @@
           img {
             width: 9.99px;
             height: 15.98px;
+          }
+        }
+        .slider-button-prev {
+        }
+        .slider-button-next {
+          img {
+          }
+        }
+      }
+
+      .example__list {
+        .example__item {
+          img {
+          }
+
+          &.slick-current {
+            img {
+            }
+          }
+
+          &.prev-slide {
+            img {
+            }
+          }
+
+          &.next-slide {
+            img {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .example {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .example__text-block {
+      .example__description{
+        font-size: 14px;
+        margin: 12px 0px 20px 0px;
+      }
+    }
+    .slider__wrapper {
+      .slider__navigation {
+        .slider-button-prev,
+        .slider-button-next {
+          img {
           }
         }
         .slider-button-prev {

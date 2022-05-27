@@ -9,15 +9,21 @@
 //   $('.clients__list').slick('slickPrev');
 // }
 
-let exampleList = document.querySelector(".example__list_1");
+let exampleList1 = document.querySelector(".example__list_1");
 // btns 
-let example1navigation = document.querySelector(".example__navigation_1 ")
-let currentNext = document.querySelector(".example__navigation_1 > .slider-button-next");
-let currentPrev = document.querySelector(".example__navigation_1 >.slider-button-prev");
+let currentNext1 = document.querySelector(".example__navigation_1 > .slider-button-next");
+let currentPrev1 = document.querySelector(".example__navigation_1 >.slider-button-prev");
 
 
+let exampleList2 = document.querySelector(".example__list_2");
+// btns 
+let currentNext2 = document.querySelector(".example__navigation_2 > .slider-button-next");
+let currentPrev2 = document.querySelector(".example__navigation_2 >.slider-button-prev");
 
-
+let exampleList3 = document.querySelector(".example__list_3");
+// btns 
+let currentNext3 = document.querySelector(".example__navigation_3 > .slider-button-next");
+let currentPrev3 = document.querySelector(".example__navigation_3 >.slider-button-prev");
 
 function sliderTypeExample(CurrentList, btnPrev, btnNext) {
   $(document).ready(function () {
@@ -75,5 +81,8 @@ function sliderTypeExample(CurrentList, btnPrev, btnNext) {
 
 }
 
-sliderTypeExample(exampleList, currentPrev, currentNext)
+sliderTypeExample(exampleList1, currentPrev1, currentNext1)
+
+
+
 
