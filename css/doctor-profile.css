@@ -129,6 +129,11 @@ body button {
   margin: 0 auto;
 }
 
+.container-wide {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
 .colorized {
   color: #b68c6e;
 }
