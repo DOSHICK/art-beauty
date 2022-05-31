@@ -1,0 +1,206 @@
+.procedure {
+  background: #f0e3da;
+  overflow: hidden;
+  .procedure__wrapper {
+    padding-top: 130px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: relative;
+    &::before {
+      z-index: 2;
+      position: absolute;
+      content: "";
+      background: url("../img/blocks/procedure/line.svg");
+      background-repeat: repeat-y;
+      width: 704.08px;
+      height: 1747px;
+      right: 300px;
+      bottom: -285px;
+    }
+
+    .procedure__block {
+    }
+    .procedure__block_1 {
+      max-width: 780px;
+      width: 780px;
+      margin: 0px 64px 0px 0px;
+      .procedure__title {
+        @include fontTitle1;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 59px;
+        color: #1d1d1a;
+        line-height: 112.2%;
+      }
+      .procedure__img-block {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        z-index: 1;
+        img {
+          z-index: 1;
+          margin: 0px 63px 0px 0px;
+        }
+        &::before {
+          z-index: -2;
+          position: absolute;
+          content: "";
+          background: #eacfbc;
+          width: 262px;
+          height: 223px;
+          right: 300px;
+          bottom: 0px;
+        }
+        &::after {
+          z-index: -1;
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+          content: "";
+          background: #dbbea7;
+          width: 408px;
+          height: 323px;
+        }
+      }
+    }
+
+    .procedure__block_2 {
+      max-width: 650px;
+      .procedure__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        color: #1d1d1a;
+        margin: 0px 0px 30px 0px;
+        &:last-child {
+          margin: 0px 0px 0px 0px;
+        }
+      }
+      .procedure__text_bolder {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .procedure {
+    .procedure__wrapper {
+      flex-direction: column;
+
+      &::before {
+      }
+
+      .procedure__block {
+      }
+      .procedure__block_1 {
+        max-width: none;
+        width: unset;
+        margin: 0px 0px 0px 0px;
+        .procedure__title {
+        }
+        .procedure__img-block {
+          justify-content: center;
+          img {
+          }
+          &::before {
+          }
+          &::after {
+          }
+        }
+      }
+
+      .procedure__block_2 {
+        margin: 40px 0px 0px 0px;
+        padding: 0px 0px 80px 0px;
+        max-width: none;
+
+        .procedure__text {
+          &:last-child {
+          }
+        }
+        .procedure__text_bolder {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .procedure {
+    .procedure__wrapper {
+      &::before {
+      }
+
+      .procedure__block {
+      }
+      .procedure__block_1 {
+        .procedure__title {
+          font-size: 47px;
+        }
+        .procedure__img-block {
+          img {
+            margin: 0px 0px 0px 0px;
+          }
+          &::before {
+          }
+          &::after {
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+
+      .procedure__block_2 {
+        .procedure__text {
+          &:last-child {
+          }
+        }
+        .procedure__text_bolder {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .procedure {
+    .procedure__wrapper {
+      padding-top: 40px;
+      &::before {
+      }
+
+      .procedure__block {
+      }
+      .procedure__block_1 {
+        .procedure__title {
+          font-size: 30px;
+        }
+        .procedure__img-block {
+          img {
+            width: 70%;
+          }
+          &::before {
+            content: unset;
+          }
+          &::after {
+            height: 80%;
+          }
+        }
+      }
+
+      .procedure__block_2 {
+        .procedure__text {
+          &:last-child {
+          }
+        }
+        .procedure__text_bolder {
+        }
+      }
+    }
+  }
+}
