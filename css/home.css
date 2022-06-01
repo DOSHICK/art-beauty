@@ -393,6 +393,9 @@ h5 {
   text-decoration: underline;
   border: none;
   background: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .header .header__block_1 .nav {
@@ -493,7 +496,7 @@ h5 {
 @media (max-width: 400px) {
   .header .header__block_2 {
     padding-top: 11px;
-    padding-bottom: 45px;
+    padding-bottom: 0px;
   }
   .header .header__block_2 .logo-link {
     width: 147px;
@@ -958,7 +961,7 @@ h5 {
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  border: 1px solid transparent;
+  border: 1px solid rgba(182, 140, 110, 0.19);
 }
 
 .services .services__wrapper .services__list .services__item:hover {
@@ -1913,7 +1916,7 @@ h5 {
   .certificates .certificates__wrapper .certificates__block_2::before {
     height: calc(100% - 60px);
     bottom: 0;
-    width: calc(100vw - 17px);
+    width: calc(100vw - 0px);
     top: 60px;
     left: -15px;
   }

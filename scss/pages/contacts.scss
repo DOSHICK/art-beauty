@@ -12,6 +12,7 @@
 @import "../components/blocks/breadcrumbs";
 @import "../components/blocks/proposal";
 
+/*   contacts   */
 .contacts {
   background: linear-gradient(
       182.31deg,
@@ -127,7 +128,6 @@
     }
   }
 }
-
 @media (max-width: 1550px) {
   .contacts {
     .contacts__block {
@@ -170,7 +170,6 @@
     }
   }
 }
-
 @media (max-width: 1300px) {
   .contacts {
     .contacts__block {
@@ -215,7 +214,6 @@
     }
   }
 }
-
 @media (max-width: 1200px) {
   .contacts {
     .contacts__block {
@@ -262,7 +260,6 @@
     }
   }
 }
-
 @media (max-width: 800px) {
   .contacts {
     .contacts__block {
@@ -306,7 +303,6 @@
     }
   }
 }
-
 @media (max-width: 500px) {
   .contacts {
     .contacts__block {
@@ -352,6 +348,7 @@
   }
 }
 
+/*   additional   */
 .additional {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -392,7 +389,6 @@
     }
   }
 }
-
 @media (max-width:1400px){
   .additional {
     justify-content: space-between;
@@ -415,7 +411,6 @@
     }
   }
 }
-
 @media (max-width:1200px){
   .additional {
     flex-direction: column;
@@ -439,7 +434,6 @@
     }
   }
 }
-
 @media (max-width:500px){
   .additional {
     flex-direction: column;

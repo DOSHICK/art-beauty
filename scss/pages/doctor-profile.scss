@@ -20,6 +20,12 @@
 @import "../components/blocks/proposal";
 @import "../components/blocks/direrctions";
 
+/*   для работы  position: sticky;   */
+.wrapper{
+  overflow: unset;
+}
+
+
 .offer {
   background: linear-gradient(
       182.31deg,
@@ -113,7 +119,6 @@
     }
   }
 }
-
 @media (max-width: 1150px) {
   .offer {
     .doctor-info {
@@ -151,7 +156,6 @@
     }
   }
 }
-
 @media (max-width: 1000px) {
   .offer {
     .doctor-info {
@@ -194,7 +198,6 @@
     }
   }
 }
-
 @media (max-width: 950px) {
   .offer {
     .doctor-info {
@@ -243,7 +246,6 @@
     }
   }
 }
-
 @media (max-width: 550px) {
   .offer {
     .doctor-info {
@@ -264,7 +266,7 @@
         }
 
         .doctor-info__link {
-          margin: 28px 0px 28px 0px ;
+          margin: 28px 0px 28px 0px;
         }
       }
 
@@ -290,8 +292,6 @@
     }
   }
 }
-
-
 
 /*   profile   */
 .profile {
@@ -414,7 +414,6 @@
     }
   }
 }
-
 @media (max-width: 1405px) {
   .profile {
     .profile__wrapper {
@@ -721,28 +720,25 @@
   }
 }
 
-
-
-
-/*   rxamples__wrapper   */
-.examples__wrapper{
+/*   examples__wrapper   */
+.examples__wrapper {
   padding: 0px 0px 130px 0px;
-  .example{
+  .example {
     padding-bottom: 0px;
   }
 }
-@media (max-width:800px){
-  .examples__wrapper{
+@media (max-width: 800px) {
+  .examples__wrapper {
     padding: 0px 0px 50px 0px;
-    .example{
+    .example {
       padding-bottom: 0px;
     }
   }
 }
-@media (max-width:500px){
-  .examples__wrapper{
+@media (max-width: 500px) {
+  .examples__wrapper {
     padding: 0px 0px 30px 0px;
-    .example{
+    .example {
       padding-bottom: 0px;
     }
   }

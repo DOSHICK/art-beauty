@@ -23,12 +23,12 @@ $(document).ready(function () {
   });
 });
 
-let specialistsBtnNext = document.querySelector(".slider-button-next")
+let specialistsBtnNext = document.querySelector(".specialists > .specialists__wrapper > .slider__wrapper > .slider__navigation > .slider-button-next")
 specialistsBtnNext.onclick = function () {
   $('.specialists__list').slick('slickNext');
 }
 
-let specialistsBtnPrev = document.querySelector(".slider-button-prev")
+let specialistsBtnPrev = document.querySelector(".specialists > .specialists__wrapper > .slider__wrapper > .slider__navigation > .slider-button-prev")
 specialistsBtnPrev.onclick = function () {
   $('.specialists__list').slick('slickPrev');
 }

@@ -112,6 +112,11 @@
           text-decoration: underline;
           border: none;
           background: none;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+          &:hover{
+          
+          }
         }
       }
     }
@@ -341,7 +346,7 @@
     }
     .header__block_2 {
       padding-top: 11px;
-      padding-bottom: 45px;
+      padding-bottom: 0px;
       .logo-link {
         width: 147px;
         height: 60px;

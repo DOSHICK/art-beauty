@@ -88,7 +88,10 @@
 .stocks__list {
   padding-top: 40px;
   padding-bottom: 130px;
+  z-index: 1;
   .stocks__item {
+    z-index: 1;
+
     display: flex;
     flex-direction: column;
     margin: 0px 0px 50px 0px;
@@ -97,8 +100,10 @@
     }
     .stocks__img {
       width: calc(100% - 70px);
+      z-index: 2;
     }
     .stocks__text {
+      z-index: 1;
       @include fontQuote;
       color: #ffffff;
       padding: 18px 150px 35px 38px;

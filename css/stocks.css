@@ -393,6 +393,9 @@ h5 {
   text-decoration: underline;
   border: none;
   background: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .header .header__block_1 .nav {
@@ -493,7 +496,7 @@ h5 {
 @media (max-width: 400px) {
   .header .header__block_2 {
     padding-top: 11px;
-    padding-bottom: 45px;
+    padding-bottom: 0px;
   }
   .header .header__block_2 .logo-link {
     width: 147px;
@@ -1201,9 +1204,11 @@ h5 {
 .stocks__list {
   padding-top: 40px;
   padding-bottom: 130px;
+  z-index: 1;
 }
 
 .stocks__list .stocks__item {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1220,9 +1225,11 @@ h5 {
 
 .stocks__list .stocks__item .stocks__img {
   width: calc(100% - 70px);
+  z-index: 2;
 }
 
 .stocks__list .stocks__item .stocks__text {
+  z-index: 1;
   font-family: 'Lora', serif;
   color: #ffffff;
   padding: 18px 150px 35px 38px;
