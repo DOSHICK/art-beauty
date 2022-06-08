@@ -1,5 +1,5 @@
 Макет: 
-https://www.figma.com/file/FDNmISUrG4QPNppw0y5w3y/Art-Beauty?node-id=503%3A16
+https://www.figma.com/file/ke9OT515pUD9t5gCGsXiHm/Art-Beauty-(Copy)
 
 услуги
 
