@@ -888,9 +888,11 @@ h5 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #1d1d1a;
+  z-index: 1;
 }
 
 .link-rounded::after {
+  z-index: -1;
   content: "";
   position: absolute;
   background: url("../img/stable/link-oval.svg");

@@ -128,73 +128,73 @@
     }
   }
 }
-@media (max-width: 1450px) {
-  .doctors__list {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    .doctors__item {
-      &:nth-child(2n) {
-        justify-self: flex-end;
-      }
-      &::after {
-      }
-      .doctors__block {
-        .doctors__item-img {
-        }
-        .doctors__item-title {
-        }
-        .doctors__item-text {
-        }
-      }
-    }
-  }
-}
-@media (max-width: 950px) {
-  .doctors__list {
-    grid-template-columns: auto;
+// @media (max-width: 1450px) {
+//   .doctors__list {
+//     grid-template-columns: auto auto;
+//     grid-template-rows: auto auto auto;
+//     .doctors__item {
+//       &:nth-child(2n) {
+//         justify-self: flex-end;
+//       }
+//       &::after {
+//       }
+//       .doctors__block {
+//         .doctors__item-img {
+//         }
+//         .doctors__item-title {
+//         }
+//         .doctors__item-text {
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 950px) {
+//   .doctors__list {
+//     grid-template-columns: auto;
 
-    .doctors__item {
-      justify-self: center;
-      &:nth-child(2n) {
-        justify-self: center;
-      }
-      &::after {
-      }
-      .doctors__block {
-        .doctors__item-img {
-        }
-        .doctors__item-title {
-        }
-        .doctors__item-text {
-        }
-      }
-    }
-  }
-}
-@media (max-width: 550px) {
-  .doctors__list {
-    grid-template-columns: auto;
+//     .doctors__item {
+//       justify-self: center;
+//       &:nth-child(2n) {
+//         justify-self: center;
+//       }
+//       &::after {
+//       }
+//       .doctors__block {
+//         .doctors__item-img {
+//         }
+//         .doctors__item-title {
+//         }
+//         .doctors__item-text {
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (max-width: 550px) {
+//   .doctors__list {
+//     grid-template-columns: auto;
 
-    .doctors__item {
-      justify-self: center;
-      padding: 0px 0px 0px 0px;
-      max-width: 100%;
-      &:nth-child(2n) {
-        justify-self: center;
-      }
-      &::after {
-        content: unset;
-      }
-      .doctors__block {
-        .doctors__item-img {
-          width: 100%;
-        }
-        .doctors__item-title {
-          font-size: 28px;
-        }
-        .doctors__item-text {
-        }
-      }
-    }
-  }
-}
+//     .doctors__item {
+//       justify-self: center;
+//       padding: 0px 0px 0px 0px;
+//       max-width: 100%;
+//       &:nth-child(2n) {
+//         justify-self: center;
+//       }
+//       &::after {
+//         content: unset;
+//       }
+//       .doctors__block {
+//         .doctors__item-img {
+//           width: 100%;
+//         }
+//         .doctors__item-title {
+//           font-size: 28px;
+//         }
+//         .doctors__item-text {
+//         }
+//       }
+//     }
+//   }
+// }
