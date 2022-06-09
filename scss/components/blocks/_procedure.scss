@@ -8,17 +8,6 @@
     flex-direction: row;
     z-index: 1;
     position: relative;
-    &::before {
-      z-index: 2;
-      position: absolute;
-      content: "";
-      background: url("../img/blocks/procedure/line.svg");
-      background-repeat: repeat-y;
-      width: 704.08px;
-      height: 1747px;
-      right: 300px;
-      bottom: -285px;
-    }
 
     .procedure__block {
     }
@@ -33,6 +22,18 @@
         font-size: 59px;
         color: #1d1d1a;
         line-height: 112.2%;
+        position: relative; 
+        &::before {
+          position: absolute; 
+          bottom: -130px;
+          left: -137px;
+          content: '';
+          display: block;
+          width: 263px;
+          height: 263px;
+          border: 1px solid #B68C6E;
+          border-radius: 50%;
+        }
       }
       .procedure__img-block {
         position: relative;
@@ -64,6 +65,17 @@
           width: 408px;
           height: 323px;
         }
+      }
+      &::before {
+        z-index: 2;
+        position: absolute;
+        content: "";
+        background: url("../img/blocks/procedure/line.svg");
+        background-repeat: repeat-y;
+        width: 704.08px;
+        height: 1747px;
+        left: calc(50% - 190px);
+        bottom: -285px;
       }
     }
 
@@ -111,6 +123,9 @@
           &::after {
           }
         }
+        &::before {
+          content: unset;
+        }
       }
 
       .procedure__block_2 {
@@ -140,6 +155,9 @@
       .procedure__block_1 {
         .procedure__title {
           font-size: 47px;
+          &::before{
+            content: unset;
+          }
         }
         .procedure__img-block {
           img {

@@ -1011,10 +1011,21 @@ h5 {
 }
 
 .clinic {
-  padding-top: 147px;
-  padding-bottom: 134px;
   background: #f0e3da;
   overflow: hidden;
+  position: relative;
+  padding-top: 147px;
+  padding-bottom: 134px;
+}
+
+.clinic .clinic__wrapper::before {
+  content: "";
+  position: absolute;
+  background: url("../img/stable/line-bg-before.svg");
+  width: 352.18px;
+  height: 100%;
+  top: 0px;
+  left: calc(50% - 271px);
 }
 
 .clinic .clinic__wrapper .clinic__block_1 {
@@ -1061,7 +1072,7 @@ h5 {
 
 .clinic .clinic__wrapper .clinic__block_1 .clinic__text-block .clinic__text::before {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 153px;
@@ -1222,6 +1233,9 @@ h5 {
     padding-top: 800px;
     padding-bottom: 80px;
   }
+  .clinic .clinic__wrapper::before {
+    content: unset;
+  }
   .clinic .clinic__wrapper .clinic__block_2.clinic__info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1302,6 +1316,17 @@ h5 {
 
 .specialists {
   padding: 113px 0px 270px 0px;
+  position: relative;
+}
+
+.specialists::before {
+  content: "";
+  position: absolute;
+  background: url("../img/stable/line-bg-before-colored.svg");
+  width: 453.25px;
+  height: 100%;
+  top: 0px;
+  left: calc(50% + 190px);
 }
 
 .specialists .specialists__wrapper {

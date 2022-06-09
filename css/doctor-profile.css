@@ -1207,6 +1207,17 @@ h5 {
 
 .specialists {
   padding: 113px 0px 270px 0px;
+  position: relative;
+}
+
+.specialists::before {
+  content: "";
+  position: absolute;
+  background: url("../img/stable/line-bg-before-colored.svg");
+  width: 453.25px;
+  height: 100%;
+  top: 0px;
+  left: calc(50% + 190px);
 }
 
 .specialists .specialists__wrapper {

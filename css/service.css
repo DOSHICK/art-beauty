@@ -1286,18 +1286,6 @@ h5 {
   position: relative;
 }
 
-.procedure .procedure__wrapper::before {
-  z-index: 2;
-  position: absolute;
-  content: "";
-  background: url("../img/blocks/procedure/line.svg");
-  background-repeat: repeat-y;
-  width: 704.08px;
-  height: 1747px;
-  right: 300px;
-  bottom: -285px;
-}
-
 .procedure .procedure__wrapper .procedure__block_1 {
   max-width: 780px;
   width: 780px;
@@ -1311,6 +1299,19 @@ h5 {
   font-size: 59px;
   color: #1d1d1a;
   line-height: 112.2%;
+  position: relative;
+}
+
+.procedure .procedure__wrapper .procedure__block_1 .procedure__title::before {
+  position: absolute;
+  bottom: -130px;
+  left: -137px;
+  content: '';
+  display: block;
+  width: 263px;
+  height: 263px;
+  border: 1px solid #B68C6E;
+  border-radius: 50%;
 }
 
 .procedure .procedure__wrapper .procedure__block_1 .procedure__img-block {
@@ -1355,6 +1356,18 @@ h5 {
   height: 323px;
 }
 
+.procedure .procedure__wrapper .procedure__block_1::before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  background: url("../img/blocks/procedure/line.svg");
+  background-repeat: repeat-y;
+  width: 704.08px;
+  height: 1747px;
+  left: calc(50% - 190px);
+  bottom: -285px;
+}
+
 .procedure .procedure__wrapper .procedure__block_2 {
   max-width: 650px;
 }
@@ -1392,6 +1405,9 @@ h5 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .procedure .procedure__wrapper .procedure__block_1::before {
+    content: unset;
+  }
   .procedure .procedure__wrapper .procedure__block_2 {
     margin: 40px 0px 0px 0px;
     padding: 0px 0px 80px 0px;
@@ -1402,6 +1418,9 @@ h5 {
 @media (max-width: 600px) {
   .procedure .procedure__wrapper .procedure__block_1 .procedure__title {
     font-size: 47px;
+  }
+  .procedure .procedure__wrapper .procedure__block_1 .procedure__title::before {
+    content: unset;
   }
   .procedure .procedure__wrapper .procedure__block_1 .procedure__img-block img {
     margin: 0px 0px 0px 0px;
@@ -1972,6 +1991,19 @@ h5 {
   padding-bottom: 134px;
   background: #f0e3da;
   overflow: hidden;
+  position: relative;
+}
+
+.prepare::before {
+  content: "";
+  position: absolute;
+  background: url("../img/stable/line-bg-before.svg");
+  width: 704.08px;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100%;
+  top: 0px;
+  left: calc(50% - 500px);
 }
 
 .prepare .prepare__wrapper .prepare__block_1 {
@@ -2078,12 +2110,18 @@ h5 {
 }
 
 @media (max-width: 1450px) {
+  .prepare .prepare__wrapper::before {
+    content: unset;
+  }
   .prepare .prepare__wrapper .prepare__block_1 .prepare__img-block .prepare__img-secondary {
     left: 240px;
   }
 }
 
 @media (max-width: 1300px) {
+  .prepare::before {
+    content: unset;
+  }
   .prepare .prepare__wrapper .prepare__block_1 {
     padding-bottom: 160px;
     -webkit-box-orient: vertical;
@@ -2357,6 +2395,17 @@ h5 {
 
 .specialists {
   padding: 113px 0px 270px 0px;
+  position: relative;
+}
+
+.specialists::before {
+  content: "";
+  position: absolute;
+  background: url("../img/stable/line-bg-before-colored.svg");
+  width: 453.25px;
+  height: 100%;
+  top: 0px;
+  left: calc(50% + 190px);
 }
 
 .specialists .specialists__wrapper {

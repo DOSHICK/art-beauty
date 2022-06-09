@@ -3,6 +3,18 @@
   padding-bottom: 134px;
   background: #f0e3da;
   overflow: hidden;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/stable/line-bg-before.svg");
+    width: 704.08px;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100%;
+    top: 0px;
+    left: calc(50% - 500px);
+  }
 
   .prepare__wrapper {
     .prepare__block {
@@ -137,6 +149,9 @@
 @media (max-width: 1450px) {
   .prepare {
     .prepare__wrapper {
+      &::before {
+        content: unset;
+      }
       .prepare__block {
       }
 
@@ -176,6 +191,9 @@
 }
 @media (max-width: 1300px) {
   .prepare {
+    &::before{
+      content: unset;
+    }
     .prepare__wrapper {
       .prepare__block {
       }
