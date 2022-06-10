@@ -1251,12 +1251,18 @@ h5 {
 .doctors__list {
   padding-top: 107px;
   padding-bottom: 10px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .doctors__list .doctors__item {
@@ -1289,6 +1295,18 @@ h5 {
   height: 370px;
 }
 
+.doctors__list .doctors__item .doctors__block {
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.doctors__list .doctors__item .doctors__block .doctors__item-img {
+  width: 395px;
+  height: 468px;
+}
+
 .doctors__list .doctors__item .doctors__block .doctors__item-title {
   margin: 42px 0px 0px 0px;
   font-family: "Kudryashev Display";
@@ -1297,6 +1315,9 @@ h5 {
   line-height: 123.2%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .doctors__list .doctors__item .doctors__block .doctors__item-text {
@@ -1305,5 +1326,111 @@ h5 {
   font-size: 14px;
   line-height: 180%;
   padding: 0px 0px 40px 0px;
+}
+
+@media (max-width: 1420px) {
+  .doctors__list .doctors__item {
+    padding: 0px 0px 0px 30px;
+  }
+  .doctors__list .doctors__item::after {
+    top: -35px;
+  }
+}
+
+@media (max-width: 1330px) {
+  .doctors__list .doctors__item {
+    padding: 0px 0px 0px 30px;
+  }
+  .doctors__list .doctors__item::after {
+    top: -35px;
+  }
+  .doctors__list .doctors__item .doctors__block .doctors__item-img {
+    width: 350px;
+    height: 414px;
+  }
+  .doctors__list .doctors__item .doctors__block .doctors__item-title {
+    margin: 20px 0px 0px 0px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .doctors__list .doctors__item {
+    margin: 0px 0px 150px 0px;
+  }
+  .doctors__list .doctors__item::after {
+    width: calc(100% - 40px);
+    height: 360px;
+  }
+  .doctors__list .doctors__item .doctors__block .doctors__item-img {
+    width: 300px;
+    height: 355px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .doctors__list .doctors__item .doctors__block .doctors__item-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .doctors__list .doctors__item .doctors__block .doctors__item-title {
+    font-size: 26px;
+  }
+  .doctors__list .doctors__item .doctors__link.link-rounded {
+    font-size: 20px;
+    padding: 0px 0px 0px 65px;
+  }
+  .doctors__list .doctors__item .doctors__link.link-rounded::after {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .doctors__list .doctors__item .doctors__block .doctors__item-title {
+    font-size: 26px;
+  }
+  .doctors__list .doctors__item .doctors__link.link-rounded {
+    font-size: 20px;
+    padding: 0px 0px 0px 65px;
+  }
+  .doctors__list .doctors__item .doctors__link.link-rounded::after {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 690px) {
+  .doctors__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .doctors__list .doctors__item {
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+  .doctors__list .doctors__item::after {
+    left: -20px;
+  }
+  .doctors__list .doctors__item .doctors__block .doctors__item-title {
+    font-size: 26px;
+  }
+  .doctors__list .doctors__item .doctors__link.link-rounded {
+    font-size: 20px;
+    padding: 0px 0px 0px 65px;
+  }
+  .doctors__list .doctors__item .doctors__link.link-rounded::after {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 130px;
+  }
 }
 /*# sourceMappingURL=doctors.css.map */
