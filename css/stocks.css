@@ -1209,38 +1209,6 @@ h5 {
 
 .stocks__list .stocks__item {
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0px 0px 50px 0px;
-}
-
-.stocks__list .stocks__item:last-child {
-  margin: 0;
-}
-
-.stocks__list .stocks__item .stocks__img {
-  width: calc(100% - 70px);
-  z-index: 2;
-}
-
-.stocks__list .stocks__item .stocks__text {
-  z-index: 1;
-  font-family: 'Lora', serif;
-  color: #ffffff;
-  padding: 18px 150px 35px 38px;
-  width: calc(100% - 120px);
-  display: block;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 29px;
-  line-height: 140%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1249,85 +1217,234 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0px 0px 50px 0px;
 }
 
-.stocks__list .stocks__item .stocks__text::after {
+.stocks__list .stocks__item:last-child {
+  margin: 0;
+}
+
+.stocks__list .stocks__item .stocks__img {
+  position: absolute;
+  left: 0px;
+  width: 60%;
+  z-index: 2;
+}
+
+.stocks__list .stocks__item .stocks__block {
+  margin: 92px 0px 0px 0px;
+  padding: 140px 35px 45px 110px;
+  position: relative;
+  width: 986.23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.stocks__list .stocks__item .stocks__block::after {
   content: "";
   position: absolute;
   z-index: -1;
   bottom: 0;
   display: block;
+  top: 0px;
   left: 0px;
   width: 100%;
-  height: 385px;
+  height: 510px;
   background: #b68c6e;
 }
 
-.stocks__list .stocks__item .stocks__text::before {
-  content: "";
+.stocks__list .stocks__item .stocks__block .stocks__text {
+  z-index: 1;
+  font-family: 'Lora', serif;
+  color: #ffffff;
   display: block;
-  background: url("../img/pages/stocks/arrow-stiks__text-before.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-width: 30px;
-  height: 14px;
-  margin: 12px 25px 0px 0px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 140%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 515px;
 }
 
-@media (max-width: 1200px) {
+.stocks__list .stocks__item .stocks__block .stocks__btn-block {
+  margin: 124px 0px 0px 0px;
+}
+
+.stocks__list .stocks__item .stocks__block .stocks__btn-block .stocks__link {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.stocks__list .stocks__item .stocks__block .stocks__btn-block .stocks__link_1 {
+  color: #fff;
+  margin: 0px 188px 0px 0px;
+}
+
+.stocks__list .stocks__item .stocks__block .stocks__btn-block .stocks__link_2 {
+  color: #1d1d1a;
+}
+
+@media (max-width: 1500px) {
   .stocks__list .stocks__item .stocks__img {
-    width: 100%;
+    width: 50%;
   }
-  .stocks__list .stocks__item .stocks__text {
-    padding: 18px 100px 35px 38px;
-    width: 100%;
+  .stocks__list .stocks__item .stocks__block {
+    margin: 50px 0px 0px 0px;
+    padding: 140px 35px 45px 110px;
+  }
+  .stocks__list .stocks__item .stocks__block::after {
+    height: 460px;
+  }
+  .stocks__list .stocks__item .stocks__block .stocks__btn-block {
+    margin: 70px 0px 0px 0px;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
   .stocks__list .stocks__item .stocks__img {
-    width: 100%;
+    width: 50%;
   }
-  .stocks__list .stocks__item .stocks__text {
-    padding: 18px 50px 35px 38px;
+  .stocks__list .stocks__item .stocks__block {
+    margin: 50px 0px 0px 0px;
+    padding: 70px 35px 45px 110px;
+  }
+  .stocks__list .stocks__item .stocks__block::after {
+    height: 380px;
+  }
+  .stocks__list .stocks__item .stocks__block .stocks__btn-block {
+    margin: 70px 0px 0px 0px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1150px) {
+  .stocks__list .stocks__item .stocks__img {
+    width: 45%;
+  }
+  .stocks__list .stocks__item .stocks__block {
+    margin: 50px 0px 0px 0px;
+    padding: 70px 35px 45px 110px;
+  }
+  .stocks__list .stocks__item .stocks__block::after {
+    height: 360px;
+  }
+  .stocks__list .stocks__item .stocks__block .stocks__btn-block {
+    margin: 50px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 1050px) {
   .stocks__list {
-    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+  .stocks__list .stocks__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stocks__list .stocks__item .stocks__img {
+    width: 100%;
+    position: relative;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+  }
+  .stocks__list .stocks__item .stocks__block {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 30px 10px 45px 90px;
+  }
+  .stocks__list .stocks__item .stocks__block::after {
+    height: 360px;
+    height: 100%;
+    left: 40px;
+  }
+  .stocks__list .stocks__item .stocks__block .stocks__text {
+    width: 100%;
+  }
+  .stocks__list .stocks__item .stocks__block .stocks__btn-block {
+    margin: 50px 0px 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .stocks__list .stocks__item .stocks__block .stocks__btn-block .stocks__link_1 {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 660px) {
+  .stocks__list .stocks__item .stocks__block .stocks__text {
+    font-size: 23px;
+  }
+  .stocks__list .stocks__item .stocks__block .stocks__btn-block {
+    margin: 35px 0px 0px 0px;
+  }
+  .stocks__list .stocks__item .stocks__block .stocks__btn-block .stocks__link {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .stocks__list {
     padding-bottom: 50px;
   }
-  .stocks__list .stocks__item {
-    background: #b68c6e;
+  .stocks__list .stocks__item .stocks__block {
+    padding-left: 15px;
   }
-  .stocks__list .stocks__item .stocks__img {
-    width: 100%;
-  }
-  .stocks__list .stocks__item .stocks__text::before {
-    display: none;
-  }
-  .stocks__list .stocks__item .stocks__text::after {
-    display: none;
+  .stocks__list .stocks__item .stocks__block::after {
+    left: 0px;
   }
 }
 
-@media (max-width: 500px) {
-  .stocks__list .stocks__item {
-    background: #b68c6e;
+@media (max-width: 450px) {
+  .stocks__list .stocks__item .stocks__block {
+    padding-bottom: 30px;
   }
-  .stocks__list .stocks__item .stocks__img {
-    width: 100%;
+  .stocks__list .stocks__item .stocks__block .stocks__btn-block {
+    margin: 20px 0px 0px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .stocks__list .stocks__item .stocks__text {
-    padding: 18px 20px 18px 20px;
-    font-size: 22px;
+  .stocks__list .stocks__item .stocks__block .stocks__btn-block .stocks__link {
+    margin: 10px 0px 0px 0px;
   }
-  .stocks__list .stocks__item .stocks__text::before {
-    display: none;
-  }
-  .stocks__list .stocks__item .stocks__text::after {
-    display: none;
+}
+
+@media (max-width: 400px) {
+  .stocks__list .stocks__item .stocks__block .stocks__text {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=stocks.css.map */
